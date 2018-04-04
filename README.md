@@ -2,6 +2,8 @@
 
 Video Chat using QuickBox
 1) Now create a free account on Heroku.com
-	https://signup.heroku.com
+	1) https://signup.heroku.com,
+	2) also use openTox for video Streaming
+
 2) 
 
