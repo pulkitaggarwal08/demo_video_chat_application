@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pulkit.demo_video_chat.com.demovidechatwebrtc.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Switch
+            android:id="@+id/sw_video_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sw_audio_on_off"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Video on/off" />
+
+        <Switch
+            android:id="@+id/sw_audio_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/publisher_container"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:text="Audio on/off" />
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="100dp"
+            android:layout_height="133dp"
+            android:layout_above="@+id/tv_swap_camera"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/tv_swap_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:padding="4dp"
+            android:text="Click on the video to swap the camera"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</RelativeLayout>
